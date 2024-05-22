@@ -8,11 +8,12 @@ import service4 from "../assets/images/seocon.jpg";
 import service5 from "../assets/images/graphicscon.jpg";
 import service6 from "../assets/images/service6.jpeg";
 import service7 from "../assets/images/mobilecon.jpg";
-import business from '../assets/images/business.jpg'
-import itbg from '../assets/images/it.jpg'
-import web  from '../assets/images/web.jpg'
+import business from '../assets/images/business.jpg';
+import itbg from '../assets/images/it.jpg';
+import web from '../assets/images/web.jpg';
 import { Link } from 'react-router-dom';
 import Banner from '../components/commonComponeent/Banner';
+import ServiceItem from '../components/ServiceItem';
 
 const Services = () => {
     const data = [
@@ -51,49 +52,21 @@ const Services = () => {
             text: "Stay connected with your audience on the go with our custom mobile app development services. From iOS to Android, we design and develop intuitive, user-friendly mobile apps that engage users, drive conversions, and enhance brand loyalty.",
             image: service7,
         },
-
     ];
 
     return (
         <div>
-            <Banner image={itbg}  />
-            <div className='bg-cover bg-center p-4 mt-5'
-            // style={{ backgroundImage: `url(${Bursh})`, width: '100%', minheight: '100vh' }}
-            >
-
+            <Banner image={itbg} />
+            <div className='bg-cover bg-center p-4 mt-5'>
                 <h2 className="text-[15px] md:text-[25px] text-center font-bold whitespace-nowrap">
                     Our Services
                 </h2>
-                <p className="text-xl leading-relaxed justify-center flex text-center text-gray-800 items-center mt-2 ">
-                Explore Our Range of Expert Services to Elevate Your Business
+                <p className="text-xl leading-relaxed justify-center flex text-center text-gray-800 items-center mt-2">
+                    Explore Our Range of Expert Services to Elevate Your Business
                 </p>
             </div>
             {data.map((item, index) => (
-                <div
-                    key={index}
-                    className={`flex max-w-[1070px] mx-auto flex-col md:flex-row relative 
-                    ${index % 2 === 0 ? '' : 'md:flex-row-reverse'}`}
-                >
-                    <div className="w-full md:w-[60%] flex items-center justify-center py-[4%] flex-1 relative">
-                        <img src={item?.image} className=" w-full" alt="Services" />
-                        <div className="absolute bg-transparent h-full w-full top-0 left-0"></div>
-                    </div>
-                    <div className="w-full md:w-[40%] md:pl-10 sm:pl-10 sm:pr-2 extrasm:pl-7 extrasm:pr-4 flex flex-1 justify-center flex-col py-[4%]">
-                        <h1 className='text-2xl font-bold text-gray-800'>
-                            {item?.title}
-                        </h1>
-                        <p className="text-gray-900 text-xl mt-8 ">
-                            {item?.text}
-                        </p>
-                        {/* <div className="mt-6">
-                            <Link to="/price">
-                                <button className=' block py-3 px-6 text-md md:text-xl font-[100] bg-gray-800 text-white rounded-[200px] '>
-                                    Get a FREE Quote Now!
-                                </button>
-                            </Link>
-                        </div> */}
-                    </div>
-                </div>
+                <ServiceItem key={index} item={item} index={index} />
             ))}
             <ClientsReview />
         </div>

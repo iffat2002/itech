@@ -17,7 +17,7 @@ module.exports = {
           primary: '#FFFFFF',
           secondary: '#EA002A',
           tertiary: '#DFEFFF4D',
-          theme: '#F1F3F6ff',
+          theme: '#4ecca2',
           paragraphcolor :'#0e4658'
       },
     },

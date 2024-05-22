@@ -1,6 +1,7 @@
 import { Image } from 'lucide-react';
 import React from 'react';
 import { motion } from 'framer-motion';
+import { useInView } from 'react-intersection-observer';
 import Heading from './commonComponeent/Heading';
 import Description from './commonComponeent/Description';
 import portfolio1 from "../assets/images/portfolio1.jpeg";
@@ -61,28 +62,39 @@ export default function Portfolio() {
                     <Heading heading={"Portfolio"} className={"text-center"} />
                     <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 lg:gap-10 mt-8'>
                         {portfolioContent.map((item, index) => (
-                            <motion.div
-                                key={index}
-                                initial="hidden"
-                                animate="visible"
-                                variants={cardVariants}
-                                transition={{ duration: 0.5, delay: index * 0.1 }}
-                            >
-                                <img src={item.image} className="w-full h-[200px] rounded-lg" alt="Services" />
-                                <div className='mt-2'>
-                                    <SubHeading subHeading={item.heading} />
-                                    <Description description={item.description} className={"mt-2 mb-3"} />
-                                    <div className=''>
-                                        <Link to="/services">
-                                            <Button title={"Our Services"} className={"bg-[#4ecca2] font-mediam text-[12px] text-white"} />
-                                        </Link>
-                                    </div>
-                                </div>
-                            </motion.div>
+                            <Card key={index} item={item} index={index} cardVariants={cardVariants} />
                         ))}
                     </div>
                 </div>
             </section>
         </>
+    );
+}
+
+function Card({ item, index, cardVariants }) {
+    const { ref, inView } = useInView({
+        triggerOnce: false,
+        threshold: 0.5,
+    });
+
+    return (
+        <motion.div
+            ref={ref}
+            initial="hidden"
+            animate={inView ? "visible" : "hidden"}
+            variants={cardVariants}
+            transition={{ duration: 0.5, delay: index * 0.2 }}
+        >
+            <img src={item.image} className="w-full h-[200px] rounded-lg" alt="Services" />
+            <div className='mt-2'>
+                <SubHeading subHeading={item.heading} />
+                <Description description={item.description} className={"mt-2 mb-3"} />
+                <div className=''>
+                    <Link to="/services">
+                        <Button title={"Our Services"} className={"bg-[#4ecca2] font-mediam text-[12px] text-white"} />
+                    </Link>
+                </div>
+            </div>
+        </motion.div>
     );
 }
