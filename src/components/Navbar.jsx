@@ -23,9 +23,9 @@ const Navbar = () => {
   return (
     <nav className={`!bg-black absolute w-full z-20 top-0 start-0 ${isMenuOpen ? '' : ''}  relatve bg-white`} style={{ boxShadow: "0px 25px 20px -29px rgba(0,0,0,0.45)" }}>
       <div className="container m-auto">
-        <div className="flex flex-wrap items-center justify-between mx-auto py-2">
+        <div className="flex flex-wrap items-center justify-between mx-auto py-2 px-4">
           <Link to={"/"} className="flex items-center ">
-            <img src={Logo} alt="Flowbite Logo" className="h-20 w-52" />
+            <img src={Logo} alt="Flowbite Logo" className="h-20 w-64" />
           </Link>
           <button onClick={toggleMenu} type="button" className="mr-[25px] inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200" aria-controls="navbar-sticky" aria-expanded={isMenuOpen}>
             <span className="sr-only">Open main menu</span>
