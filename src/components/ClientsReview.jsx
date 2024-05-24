@@ -3,7 +3,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { Star, StarHalf } from "lucide-react";
-import Heading from "./commonComponeent/Heading";
+import Heading from "./shared/Heading";
 
 const testimonialList = [
     {
@@ -142,10 +142,12 @@ const ClientsReview = () => {
             <div className="container  mx-auto">
                 <div className="grid grid-cols-12 mb-6 md:mb-12">
                     <div className="col-span-12 lg:col-span-5">
-                        <Heading heading={"Everyone should believe in What Our Client Say."} />
+                        {/* <Heading heading={"Everyone should believe in What Our Client Say."} /> */}
+                        <h1 className='text-[22px] md:text-[1.75rem] lg:text-4xl font-bold pb-2 mb-4 md:mb-8' >
+                            Everyone should believe in What Our Client Say.
+                        </h1>
                     </div>
                 </div>
-
                 <Slider {...sliderSettings1} className="flex justify-center mb-8">
                     {testimonialList.map((testimonial, i) => (
                         <div key={i}>

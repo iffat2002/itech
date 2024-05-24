@@ -2,9 +2,9 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import Logo from "../assets/icons/Logo.png"
-import Heading from './commonComponeent/Heading';
-import Description from './commonComponeent/Description';
-import Button from './commonComponeent/Button';
+import Heading from './shared/Heading';
+import Description from './shared/Description';
+import Button from './shared/Button';
 
 const Hero = ({ image, title, heroHeading, heroDescription }) => {
   // Split the heading into individual characters, including spaces

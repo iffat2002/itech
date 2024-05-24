@@ -3,7 +3,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { Star, StarHalf } from "lucide-react";
-import Heading from "./commonComponeent/Heading";
+import Heading from "./shared/Heading";
 
 const testimonialList = [
   {

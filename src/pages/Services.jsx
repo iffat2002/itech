@@ -12,7 +12,7 @@ import business from '../assets/images/business.jpg';
 import itbg from '../assets/images/it.jpg';
 import web from '../assets/images/web.jpg';
 import { Link } from 'react-router-dom';
-import Banner from '../components/commonComponeent/Banner';
+import Banner from '../components/shared/Banner';
 import ServiceItem from '../components/ServiceItem';
 
 const Services = () => {
@@ -58,13 +58,15 @@ const Services = () => {
         <div>
             <Banner image={itbg} />
             <div className='bg-cover bg-center p-4 mt-5'>
-                <h2 className="text-[15px] md:text-[25px] text-center font-bold whitespace-nowrap">
+                <h2 className="text-[15px] md:text-[25px] text-center font-bold whitespace-nowrap relative">
                     Our Services
                 </h2>
+                <div className="w-8 h-1 bg-theme mx-auto mt-1 justify-start flex"></div>
                 <p className="text-xl leading-relaxed justify-center flex text-center text-gray-800 items-center mt-2">
                     Explore Our Range of Expert Services to Elevate Your Business
                 </p>
             </div>
+
             {data.map((item, index) => (
                 <ServiceItem key={index} item={item} index={index} />
             ))}

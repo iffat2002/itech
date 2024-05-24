@@ -2,9 +2,9 @@ import React from 'react'
 import Hero from '../components/Hero'
 import Testimonial from '../components/Testimonial'
 import HeroImage from "../assets/images/hero-bg.jpg";
-import Heading from '../components/commonComponeent/Heading'
-import Description from '../components/commonComponeent/Description'
-import CounterCardCenter from '../components/commonComponeent/CounterCardCenter'
+import Heading from '../components/shared/Heading'
+import Description from '../components/shared/Description'
+import CounterCardCenter from '../components/shared/CounterCardCenter'
 import { FaFolder } from 'react-icons/fa'
 import HomeImg from "../assets/images/company.jpeg"
 import Portfolio from '../components/Portfolio'
@@ -55,13 +55,14 @@ const Home = () => {
   return (
     <div >
       <Hero image={HeroImage} heroHeading="Welcome to iTechgram Solutions" heroDescription={"We are using modern technologies"} />
-
       <section className='py-10 lg:py-20'>
         <div className="container m-auto lg:px-10">
           <div className='flex items-center flex-col lg:flex-row gap-5 lg:gap-20'>
             <div className="w-full lg:w-1/2">
-              <Heading heading={"We Help you increase your productivity by developing software"} />
-
+              {/* <Heading heading={"We Help you increase your productivity by developing software"} /> */}
+              <h1 className='text-[22px] md:text-[1.75rem] lg:text-4xl font-bold pb-2 mb-4 md:mb-8 '>
+                We Help you increase your productivity by developing software
+              </h1>
               <Description description={"A team of ambitious developers and coders with marvelous skill set is always here for the customers to build mobile applications and online web solutions. Sumsols technology is a Pakistan based leading software house creating Ecommerce, CMS, ERP, Startup solutions, SaaS Solutions and many more."} className={"mt-3"} />
               <ul className='mt-5'>
                 {bulletPoints.map((item, index) => (
@@ -89,7 +90,7 @@ const Home = () => {
       </section>
       <Portfolio />
       <Testimonial />
-     
+
     </div>
   )
 }
