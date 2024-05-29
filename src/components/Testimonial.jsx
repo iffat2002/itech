@@ -8,50 +8,51 @@ import Heading from "./shared/Heading";
 const testimonialList = [
   {
     author: {
-      fullName: "Sarah Thompson",
+      fullName: "Akira Tanaka",
       picture: "https://cdn.easyfrontend.com/pictures/users/user22.jpg",
     },
     rating: 3.5,
     description:
-      "Experience the confidence-boosting results of Hims' AI-powered solutions, endorsed by our delighted clientele.",
+      "The AI-powered solutions from Hims have boosted my confidence significantly. I'm happy with the results!",
   },
   {
     author: {
-      fullName: "Michael Rodriguez",
+      fullName: "Sofia Martinez",
       picture: "https://cdn.easyfrontend.com/pictures/users/user4.jpg",
     },
     rating: 4,
     description:
-      "Experience the confidence-boosting results of Hims' AI-powered solutions, endorsed by our delighted clientele.",
+      "Hims' AI solutions have made a noticeable difference for me. Highly recommended!",
   },
   {
     author: {
-      fullName: "Emily Johnson",
+      fullName: "Asmar Naeem",
       picture: "https://cdn.easyfrontend.com/pictures/users/user20.jpg",
     },
     rating: 5,
     description:
-      "Join a community of satisfied customers experiencing the seamless integration of technology and healthcare with Hims",
+      "Being part of the Hims community has been fantastic. Their tech-driven healthcare is seamless and effective.",
   },
   {
     author: {
-      fullName: "David Smith",
+      fullName: "Amina Mohammed",
       picture: "https://cdn.easyfrontend.com/pictures/users/user21.jpg",
     },
     rating: 3.5,
     description:
-      "Discover the future of personalized wellness through Hims' AI-driven innovations, backed by glowing testimonials",
+      "Hims' AI innovations have personalized my wellness journey. The testimonials are true!",
   },
   {
     author: {
-      fullName: "Jennifer Brown",
+      fullName: "Elena Petrova",
       picture: "https://cdn.easyfrontend.com/pictures/users/user18.jpg",
     },
     rating: 4,
     description:
-      "Unlocking the power of AI, Hims delivers transformative healthcare solutions, as praised by our satisfied users",
+      "Hims' AI healthcare solutions are transformative. I'm very pleased with the positive changes I've experienced.",
   },
 ];
+
 
 const Rating = ({ rating, showLabel, className }) => (
   <p className={className}>

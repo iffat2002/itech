@@ -20,6 +20,9 @@ module.exports = {
           theme: '#4ecca2',
           paragraphcolor :'#0e4658'
       },
+      backgroundImage:{
+        office: "url('/src/assets/images/office.jpg')"
+      }
     },
   },
   plugins: [],

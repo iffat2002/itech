@@ -8,7 +8,7 @@ const Whatsapp = () => {
                 class="whatsapp-button" target="_blank"
             // style={{ position: "fixed", bottom: "30px", right: '0px' }}
             >
-                <img src={Whatsappicon} alt="whatsapp" className='h-25 w-56' />
+                <img src={Whatsappicon} alt="whatsapp" className='h-25 w-56 max-md:w-40 max-sm:w-28' />
             </a>
         </div>
     )

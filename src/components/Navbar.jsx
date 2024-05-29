@@ -22,15 +22,15 @@ const Navbar = () => {
   const isPortfolio = location.pathname === '/' && location.hash === '#portfolio';
 
   return (
-    <nav className={`absolute w-full z-20 top-0 bg-black bg-opacity-80 backdrop-blur-sm ${isMenuOpen ? 'h-auto' : 'h-[85px]'} transition-all duration-300`} style={{ boxShadow: "0px 25px 20px -29px rgba(0,0,0,0.45)" }}>
-      <div className="container m-auto px-8">
-        <div className="flex flex-wrap items-center justify-between mx-auto py-2">
-          <Link to="/" className="flex items-center">
+    <nav className={`absolute w-full z-20 top-0 bg-black bg-opacity-[0.2] backdrop-blur-sm ${isMenuOpen ? 'h-auto' : 'h-[85px]'} transition-all duration-300`} style={{ boxShadow: "0px 25px 20px -29px rgba(0,0,0,0.45)" }}>
+      <div className=" h-full m-auto w-[90%]">
+        <div className="flex flex-wrap items-center h-full justify-end m-auto w-full">
+          {/* <Link to="/" className="flex items-center">
             <div className='w-60 h-20 flex items-center justify-center'>
               <img src={Logo} alt="Flowbite Logo" className="h-full w-full object-contain" />
             </div>
-          </Link>
-          <button onClick={toggleMenu} type="button" className="mr-[25px] inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-200 rounded-lg md:hidden hover:bg-theme hover:text-black focus:outline-none focus:ring-2 focus:ring-theme" aria-controls="navbar-sticky" aria-expanded={isMenuOpen}>
+          </Link> */}
+          <button onClick={toggleMenu} type="button" className=" inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-200 rounded-lg md:hidden hover:bg-theme hover:text-black focus:outline-none focus:ring-2 focus:ring-theme" aria-controls="navbar-sticky" aria-expanded={isMenuOpen}>
             <span className="sr-only">Open main menu</span>
             <svg className="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
               <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M1 1h15M1 7h15M1 13h15" />
