@@ -20,6 +20,7 @@ module.exports = {
       },
       backgroundImage: {
         office: "url('/src/assets/images/office.jpg')",
+        blocks: "url('/src/assets/images/blocks.png')",
       },
       fontFamily: {
         poppins: ['Poppins',  'sans-serif' ]
