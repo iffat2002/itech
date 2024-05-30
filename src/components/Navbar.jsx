@@ -50,6 +50,10 @@ const Navbar = () => {
                 <HashLink smooth to="/#portfolio" className={`block py-2 px-3 text-lg text-white hover:text-theme transition-all duration-300 rounded md:bg-transparent ${isPortfolio ? 'text-orange-500' : ''}`} aria-current="page" onClick={handleMenuClick}>Portfolio</HashLink>
                 {isPortfolio && <div className="border-b-[2px] border-theme"></div>}
               </li>
+              <li className='ml-0 md:ml-8 lg:text-[15pt] uppercase font-semibold'>
+                <Link to="/contact-us" className={`block py-2 px-3 text-lg text-white hover:text-theme transition-all duration-300 rounded md:bg-transparent ${location.pathname === '/contact-us' ? 'text-orange-500' : ''}`} aria-current="page" onClick={handleMenuClick}>Contact Us</Link>
+                {location.pathname === '/contact-us' && <div className="border-b-[2px] border-theme "></div>}
+              </li>
             </ul>
           </div>
         </div>

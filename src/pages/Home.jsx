@@ -16,6 +16,7 @@ import menu from "../assets/icons/menu.svg";
 import mobileApps from "../assets/icons/mobile-apps.svg";
 import WhyChooseUs from  "../components/WhyChooseUs"
 import Portfolio from "../components/Portfolio";
+import OurProjects from "../components/OurProjects";
 const Home = () => {
   const bulletPoints = [
     {
@@ -80,7 +81,7 @@ const Home = () => {
           <div className="flex items-center flex-col lg:flex-row gap-5 lg:gap-20">
             <div className="w-full lg:w-1/2">
               {/* <Heading heading={"We Help you increase your productivity by developing software"} /> */}
-              <h1 className="text-[22px] md:text-[1.75rem] lg:text-4xl font-bold pb-2 mb-4 md:mb-8 text-[#48bc95]">
+              <h1 className="text-[22px] font-poppins md:text-[1.75rem] lg:text-4xl font-bold pb-2 mb-4 md:mb-8 text-[#48bc95]">
                 We help you increase your productivity by developing software
               </h1>
               <Description
@@ -124,6 +125,7 @@ const Home = () => {
       </section>
       <WhyChooseUs />
       <Portfolio />
+      <OurProjects />
       <Testimonial />
     </div>
   );

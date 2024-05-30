@@ -39,7 +39,7 @@ export default function Portfolio() {
    
       heading: "SEO Optimization",
       description:
-        "ReactDash is a responsive dashboard template built using React.js, designed to provide a sleek and intuitive user interface for managing data and visualizing key metrics. The dashboard features interactive charts, customizable widgets, and a clean, modern design that adapts seamlessly to different screen sizes.",
+        "Explore our SEO portfolio to see how we've boosted search rankings and organic traffic. Our services include keyword research, on-page optimization, content creation, and backlink building. Our success stories highlight significant traffic and sales increases, showcasing our effective SEO solutions.",
     },
     {
       image: <HiMiniCreditCard className="w-full h-[50px] text-[#1A1819]" />,
@@ -82,21 +82,20 @@ export default function Portfolio() {
   return (
     <>
       <section
-        className="pt-10 bg-office  bg-no-repeat bg-cover bg-center lg:pt-40 "
+        className="pt-10 bg-office lg:pt-40 "
         id="portfolio"
       >
+        <div className="bg-no-repeat bg-cover bg-center h-[60%]">
+
+        </div>
         <div className="bg-[#1A1819] bg-opacity-[0.9] text-white py-12">
           <div className="container m-auto lg:px-10 mb-12">
             <Heading
               heading={"Portfolio"}
-              className="text-center text-[#48bc95] text-4xl "
+              className="text-center font-poppins text-[#48bc95] text-5xl "
             />
-            <p className="w-[80%] mt-0 m-auto">
-              Welcome to our Portfolio section! Here, you'll find a showcase of
-              our diverse and innovative IT projects, highlighting our expertise
-              and commitment to delivering top-notch solutions. Explore our work
-              and see how we've helped businesses like yours achieve their goals
-              through technology.
+            <p className="w-[90%] mt-0 m-auto text-base text-center">
+            At itechgram, we deliver innovative solutions that drive real results for our clients. Our experience spans various industries across Canada, the USA, and Dubai. Below are some of our standout projects in website development, digital marketing, business strategy consulting, and more, showcasing how we've helped clients achieve their goals and elevate their brands
             </p>
           </div>
           <div className="bg-[#48bc95] w-full py-6">

@@ -9,11 +9,11 @@ const WhyChooseUs = () => {
     return (
         <div className="container mx-auto p-4">
           <div className="section-head mb-15 text-center">
-            <h4 className="relative text-4xl font-bold text-[#1A1819] mb-7">
+            <h4 className="relative font-poppins text-4xl font-bold text-[#1A1819] mb-7">
               Why choose <span className='text-[#48bc95]'>itechgram?</span>
               <span className="block w-15 h-0.75 bg-[#f91942] absolute left-0 bottom-[-10px] right-0 mx-auto"></span>
             </h4>
-            <p className="text-center text-[#818181] w-[80%] m-auto text-base leading-7">At itechgram, we bring a wealth of experience and expertise to the table, gained through successful projects across the globe. Here's why you should partner with us:
+            <p className="text-center text-[#818181] w-[80%] max-sm:w-[90%] m-auto text-base leading-6">At itechgram, we bring a wealth of experience and expertise to the table, gained through successful projects across the globe. Here's why you should partner with us:
 </p>
           </div>
     
@@ -79,12 +79,12 @@ const WhyChooseUs = () => {
               <MdOutlineSupportAgent />
               </div>
               <h6 className="mb-3 text-xl font-semibold text-inherit hover:text-white ">Exceptional Support</h6>
-              <p className="text-base leading-6"> Our dedication to your success doesn't end with project delivery. itechgram offers ongoing support and guidance to help you navigate challenges, optimize performance, and stay ahead of the competition, no matter where you are in the world.
+              <p className="text-base leading-6 "> Our dedication to your success doesn't end with project delivery. itechgram offers ongoing support and guidance to help you navigate challenges, optimize performance, and stay ahead of the competition, no matter where you are in the world.
 </p>
             </div>
 
           </div>
-          <p className="text-center text-[#818181] py-10 w-[80%] m-auto text-base leading-7">Choose itechgram as your global partner, and let's embark on a journey of success together.</p>
+          <p className="text-center text-[#818181] py-10 w-[80%] max-sm:w-[90%] m-auto text-base leading-7">Choose itechgram as your global partner, and let's embark on a journey of success together.</p>
         </div>
       );
     };

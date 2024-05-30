@@ -1,7 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
-import Logo from "../assets/images/Itech.jpg";
+import Logo from "../assets/images/transparent-logo.png";
 import Heading from "./shared/Heading";
 import Description from "./shared/Description";
 import Button from "./shared/Button";
@@ -29,7 +29,7 @@ const Hero = ({ image, title, heroHeading, heroDescription }) => {
   return (
     <div className="relative h-[500px] lg:h-screen">
       <div
-        className="absolute inset-0 bg-cover bg-center flex flex-col items-center justify-center pt-16"
+        className="absolute font-poppins font-light inset-0 bg-cover bg-center flex flex-col items-center justify-center pt-16"
         style={{
           backgroundImage: `linear-gradient(155deg,rgba(0, 0, 0, 0.65) 31%,rgba(0, 0, 0, 0.65) 95%), url(${image})`,
         }}
@@ -52,12 +52,15 @@ const Hero = ({ image, title, heroHeading, heroDescription }) => {
             ))}
           </motion.div> */}
           <div className="items-center text-center ">
-            <img className="w-52 m-auto"src={Logo} alt="logo"></img>
-            </div>
-          <Description
-            description={heroDescription}
-            className={"my-3 !text-white text-center text-xl  max-sm:text-base"}
-          />
+            <img className="w-[550px] m-auto mr-8" src={Logo} alt="itech logo"></img>
+          </div>
+          <p
+            className={
+              "mt-[-65px] mb-10 !text-white tracking-wide text-center text-xl max-md:text-base font-extralight leading-relaxed"
+            }
+          >
+            {heroDescription}
+          </p>
           <div className="text-center">
             {/* <Button
               title="Best Business Consultant"
@@ -65,16 +68,16 @@ const Hero = ({ image, title, heroHeading, heroDescription }) => {
                 "text-white mt-2 bg-theme !px-5 box-border  hover:text-theme hover:bg-transparent hover:border hover:border-theme cursor-pointer"
               }
             /> */}
-             <Button
+            <Button
               title="Business Consulting"
               className={
                 "text-white mt-2 bg-theme !px-5 box-border  hover:text-theme hover:bg-transparent hover:border hover:border-theme cursor-pointer"
               }
             />
-             <Button
+            <Button
               title="IT & Marketing Solutions"
               className={
-                "text-white block mt-2 bg-theme !px-5 box-border  hover:text-theme hover:bg-transparent hover:border hover:border-theme cursor-pointer"
+                "text-white m-auto block mt-3 bg-theme !px-5 box-border  hover:text-theme hover:bg-transparent hover:border hover:border-theme cursor-pointer"
               }
             />
           </div>
