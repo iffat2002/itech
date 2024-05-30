@@ -26,9 +26,7 @@ const ContactUs = () => {
             </p>
           </div>
         </div>
-        <div className="w-[40%] h-[70%] bg-cover bg-center bg-blocks rounded-3xl ml-[-15px]">
-            
-        </div>
+        <div className="w-[40%] h-[70%] bg-cover bg-center bg-blocks rounded-3xl ml-[-15px]"></div>
       </div>
     </div>
   );
