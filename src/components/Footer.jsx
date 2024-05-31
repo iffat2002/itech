@@ -19,12 +19,12 @@ const Footer = () => {
           
             src={ItechLogo}
             alt="Itechlogo"
-            className=" w-[500px] max-sm:w-[300px] m-auto cursor-pointer"
+            className=" w-[500px] max-sm:w-[400px] m-auto cursor-pointer"
           />
           {/* <h2 className="mb-4 text-2xl font-bold uppercase hover:text-theme">Address</h2>
           <p className="font-bold hover:text-theme">Mississauga ON</p> */}
         </div><div className="mt-[-48px] flex
-    justify-center cursor-pointer ml-8">
+    justify-center cursor-pointer ml-8 max-sm:mt-[-25px]">
         <FaLocationDot className="inline-block text-theme text-xl mr-2"/>
  <p className=" hover:text-theme text-sm inline-block">Mississauga, Ontario, Canada</p>
  </div>
@@ -42,9 +42,7 @@ const Footer = () => {
             <li>
               <a href="/services">Services</a>
             </li>
-            <li>
-              <a href="/">Portfolio</a>
-            </li>
+           
             <li>
               <a href="/">Contact Us</a>
             </li>

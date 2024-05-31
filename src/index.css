@@ -7,6 +7,9 @@
 * {
   box-sizing: border-box;
 }
+.parent:hover .childicon{
+  text:red;
+}
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
