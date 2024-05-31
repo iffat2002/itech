@@ -19,7 +19,7 @@ const ContactUs = () => {
         //   backgroundImage: `linear-gradient(155deg,rgba(0, 0, 0, 0.65) 31%,rgba(0, 0, 0, 0.65) 95%), url(${HeroImage})`,
         // }}
       >
-        <div className="bg-black w-[55%] max-md:w-screen max-md:h-fit h-screen rounded-br-2xl">
+        <div className="bg-black w-[55%] max-md:w-screen max-md:h-fit h-screen rounded-br-2xl max-md:border-0">
           <div className="">
             <img
               src={ItechLogo}

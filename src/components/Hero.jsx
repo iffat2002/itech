@@ -56,7 +56,7 @@ const Hero = ({ image, title, heroHeading, heroDescription }) => {
           </div>
           <p
             className={
-              "mt-[-65px] mb-10 !text-white tracking-wide text-center text-xl max-md:text-base font-extralight leading-relaxed"
+              "mt-[-65px] max-sm:mt-[-44px] mb-10 !text-white tracking-wide text-center text-xl max-md:text-base font-extralight leading-relaxed"
             }
           >
             {heroDescription}
