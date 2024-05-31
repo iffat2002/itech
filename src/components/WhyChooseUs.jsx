@@ -13,7 +13,7 @@ const WhyChooseUs = () => {
               Why choose <span className='text-[#48bc95]'>itechgram?</span>
               <span className="block w-15 h-0.75 bg-[#f91942] absolute left-0 bottom-[-10px] right-0 mx-auto"></span>
             </h4>
-            <p className="text-center text-[#818181] w-[80%] max-sm:w-[90%] m-auto text-base leading-6">At itechgram, we bring a wealth of experience and expertise to the table, gained through successful projects across the globe. Here's why you should partner with us:
+            <p className="text-center text-[#818181] w-[80%] max-sm:w-[92%] m-auto text-base leading-6">At itechgram, we bring a wealth of experience and expertise to the table, gained through successful projects across the globe. Here's why you should partner with us:
 </p>
           </div>
     

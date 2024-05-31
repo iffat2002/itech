@@ -19,7 +19,7 @@ const ContactUs = () => {
         //   backgroundImage: `linear-gradient(155deg,rgba(0, 0, 0, 0.65) 31%,rgba(0, 0, 0, 0.65) 95%), url(${HeroImage})`,
         // }}
       >
-        <div className="bg-black w-[55%] max-md:w-screen max-md:h-fit h-screen rounded-br-2xl max-md:border-0">
+        <div className="bg-black w-[55%] max-md:w-screen max-md:h-fit h-screen rounded-br-2xl max-md:rounded-none">
           <div className="">
             <img
               src={ItechLogo}
@@ -70,16 +70,21 @@ const ContactUs = () => {
                   >
                     &times;
                   </button>
-                  <ul className=" w-full flex flex-col justify-center h-full items-center text-center space-y-4 text-white font-bold uppercase">
-                    <li className="text-xl w-40 hover:border border-white cursor-pointer p-2 transition-transform transform translate-x-full delay-100">
+                  <ul className=" w-fit m-auto flex flex-col justify-center h-full items-center text-center space-y-4 text-white font-bold uppercase">
+                  <a href="/home">  <li className="text-xl mx-auto w-40 hover:border border-white p-2 cursor-pointer ">
                       Home
                     </li>
-                    <li className="text-xl w-40 hover:border border-white cursor-pointer p-2 transition-transform transform translate-x-full delay-300">
+                    </a>
+                    <a href="services">
+                    <li className="text-xl w-40 hover:border border-white cursor-pointer p-2">
                       Services
                     </li>
-                    <li className="text-xl w-40  bg-white text-gray-700 cursor-pointer p-2 transition-transform transform translate-x-full delay-500">
+                    </a>
+                    <a href="/contact-us">
+                    <li className="text-xl w-40  bg-white text-gray-700 cursor-pointer p-2">
                       Contact Us
                     </li>
+                    </a>
                   </ul>
                 
               </div>

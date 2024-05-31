@@ -24,9 +24,11 @@ const Footer = () => {
           {/* <h2 className="mb-4 text-2xl font-bold uppercase hover:text-theme">Address</h2>
           <p className="font-bold hover:text-theme">Mississauga ON</p> */}
         </div><div className="mt-[-48px] flex
-    justify-center cursor-pointer ml-8 max-sm:mt-[-25px]">
+    justify-center cursor-pointer  hover:text-theme ml-8 items-center max-sm:mt-[-25px]">
         <FaLocationDot className="inline-block text-theme text-xl mr-2"/>
- <p className=" hover:text-theme text-sm inline-block">Mississauga, Ontario, Canada</p>
+        <div>
+ <p className=" text-sm block">Mississauga 
+ </p><p className=" text-smblock">Ontario </p><p className=" text-sm block">Canada</p></div>
  </div>
         {/* Contact Information Section */}
         <div className="footer-section text-center lg:text-left w-fit m-auto py-2 pb-4">
@@ -44,7 +46,7 @@ const Footer = () => {
             </li>
            
             <li>
-              <a href="/">Contact Us</a>
+              <a href="/contact-us">Contact Us</a>
             </li>
           </ul>
         </div>
@@ -77,17 +79,17 @@ const Footer = () => {
           </h2>
          
           <div className="flex justify-center lg:justify-start gap-2">
-            <a
+            {/* <a
               target="_blank"
               href="https://www.facebook.com/profile.php?id=61557566717189"
             >
              <FaFacebookSquare  className="text-theme text-4xl" />
-            </a>
+            </a> */}
 
-            <a
+            {/* <a
               target="_blank"
               href="https://www.instagram.com/itechgramsolutions"
-            >   <AiFillInstagram className="text-theme text-4xl"/> </a>
+            >   <AiFillInstagram className="text-theme text-4xl"/> </a> */}
              <a target="_blank" href="https://www.tiktok.com/@itechgram?_t=8meQIyxuNqX&_r=1">
               <AiFillTikTok className="text-theme text-4xl"/>
               </a> 
