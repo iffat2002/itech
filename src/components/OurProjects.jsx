@@ -9,7 +9,7 @@ const OurProjects = () => {
         </h4>
         <p className="text-center text-[#818181] w-[90%]  m-auto text-lg max-md:text-base leading-6">
           Some of our diverse portfolio of successful projects spanning{" "}
-          <span className="font-bold"> Canada, USA, Dubai, and beyond :</span>
+          <span className="font-bold"> Canada, USA, Dubai, and beyond</span>
         </p>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-6">

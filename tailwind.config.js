@@ -21,9 +21,11 @@ module.exports = {
       backgroundImage: {
         office: "url('/src/assets/images/office.jpg')",
         blocks: "url('/src/assets/images/blocks.png')",
+        hero: "url('/src/assets/images/servicesHero.jpg')",
+        business: "url('/src/assets/images/BusinessConsulting.png')",
       },
       fontFamily: {
-        poppins: ['Poppins',  'sans-serif' ]
+        poppins: ["Poppins", "sans-serif"],
       },
     },
   },

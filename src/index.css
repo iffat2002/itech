@@ -10,6 +10,10 @@
 .parent:hover .childicon{
   text:red;
 }
+.bullets li{
+  margin-bottom:19px
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",

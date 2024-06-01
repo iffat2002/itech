@@ -117,7 +117,7 @@ const ContactUs = () => {
            <CiLocationOn />
               </div>
               <h6 className="mb-3 text-xl font-semibold  t-white uppercase ">Address</h6>
-              <p className="text-base leading-6">Mississauga, Ontario, Canada
+              <p className="text-base leading-6">Mississauga</p><p>Ontario</p><p> Canada
 </p>
             </div>
     

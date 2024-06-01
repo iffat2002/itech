@@ -14,6 +14,7 @@ import web from '../assets/images/web.jpg';
 import { Link } from 'react-router-dom';
 import Banner from '../components/shared/Banner';
 import ServiceItem from '../components/ServiceItem';
+import {BusinessConsult} from "../components/BusinessConsult"
 
 const Services = () => {
     const data = [
@@ -70,6 +71,7 @@ const Services = () => {
             {data.map((item, index) => (
                 <ServiceItem key={index} item={item} index={index} />
             ))}
+            <BusinessConsult />
             <ClientsReview />
         </div>
     );

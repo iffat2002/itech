@@ -24,7 +24,7 @@ const Footer = () => {
           {/* <h2 className="mb-4 text-2xl font-bold uppercase hover:text-theme">Address</h2>
           <p className="font-bold hover:text-theme">Mississauga ON</p> */}
         </div><div className="mt-[-48px] flex
-    justify-center cursor-pointer  hover:text-theme ml-8 items-center max-sm:mt-[-25px]">
+    justify-center cursor-pointer  hover:text-theme ml-8  max-sm:mt-[-25px]">
         <FaLocationDot className="inline-block text-theme text-xl mr-2"/>
         <div>
  <p className=" text-sm block">Mississauga 
