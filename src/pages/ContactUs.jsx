@@ -71,7 +71,7 @@ const ContactUs = () => {
                     &times;
                   </button>
                   <ul className=" w-fit m-auto flex flex-col justify-center h-full items-center text-center space-y-4 text-white font-bold uppercase">
-                  <a href="/home">  <li className="text-xl mx-auto w-40 hover:border border-white p-2 cursor-pointer ">
+                  <a href="/">  <li className="text-xl mx-auto w-40 hover:border border-white p-2 cursor-pointer ">
                       Home
                     </li>
                     </a>
@@ -116,7 +116,7 @@ const ContactUs = () => {
               <div className="icon item text-6xl mb-6 text-white  rounded-full bg-theme m-auto w-24 h-24 leading-none flex items-center justify-center">
            <CiLocationOn />
               </div>
-              <h6 className="mb-3 text-xl font-semibold  t-white uppercase ">Address</h6>
+              <h6 className="mb-3 text-xl font-semibold  uppercase ">Address</h6>
               <p className="text-base leading-6">Mississauga</p><p>Ontario</p><p> Canada
 </p>
             </div>
